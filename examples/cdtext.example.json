@@ -1,0 +1,18 @@
+{
+  "languages": [
+    {"code": 105, "encoding": "MS_JIS"},
+    {"code": 9, "encoding": "ISO_8859_1"}
+  ],
+  "disc": {
+    "title": ["アルバム名", "Album Title"],
+    "performer": ["アーティスト", "Artist"]
+  },
+  "tracks": [
+    {"title": ["一曲目", "Track One"], "performer": ["アーティスト", "Artist"]},
+    {"title": ["二曲目", "Track Two"], "performer": ["アーティスト", "Artist"]}
+  ],
+  "art_track": {
+    "title": ["Disc Art", "Disc Art"],
+    "performer": ["アーティスト", "Artist"]
+  }
+}

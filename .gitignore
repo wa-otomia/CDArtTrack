@@ -1,0 +1,10 @@
+*.wav
+*.bin
+*.iso
+*.iso.json
+*.raw
+*.toc
+*.cue
+*.layout.json
+__pycache__/
+out/
