@@ -45,6 +45,16 @@ inner/outer radius, sector count and track-pitch coefficients. Use one of these:
 - a built-in Disc Image Studio preset that matches your media, or
 - calibrate with the Disc Image Studio GUI (assisted calibration) and keep the `.calibration.json`.
 
+Calibration files that have produced a correct picture are collected in
+[`calibrations/`](calibrations/):
+
+| File | Media | ATIP | Mold code (hub ring) |
+|------|-------|------|----------------------|
+| [`verbatim-phono-r-cmc-cwlht-1744.calibration.json`](calibrations/verbatim-phono-r-cmc-cwlht-1744.calibration.json) | Verbatim Phono-R CD-R 80 min (Japan) | CMC Magnetics, 359,846 sectors | `CWLHT-1744` |
+
+Only use a file for discs with the same mold code. The same Phono-R pack also
+contained `CWLHT-1579` discs, and this file does **not** fit those.
+
 Every geometry option below accepts either `--calibration file.calibration.json`
 or `--r0 --r1 --sectors [--usable-sectors] [--pitch-linear --pitch-quadratic --pitch-cubic]`.
 

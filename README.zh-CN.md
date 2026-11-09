@@ -40,6 +40,14 @@ CDArtTrack 是一个只用 Python 标准库的脚本，负责把这些环节串�
 - 使用 Disc Image Studio 中与盘片相符的内置预设，或者
 - 用 Disc Image Studio 图形界面的"辅助标定"实测，保存 `.calibration.json`。
 
+实测能正确显示图案的校准文件收在 [`calibrations/`](calibrations/) 里：
+
+| 文件 | 盘片 | ATIP | 模具编号（中心透明圈） |
+|------|------|------|------------------------|
+| [`verbatim-phono-r-cmc-cwlht-1744.calibration.json`](calibrations/verbatim-phono-r-cmc-cwlht-1744.calibration.json) | Verbatim Phono-R CD-R 80 分钟（日本版） | CMC Magnetics，359,846 扇区 | `CWLHT-1744` |
+
+只能用于模具编号相同的盘。同一包 Phono-R 里还混有 `CWLHT-1579` 的盘，这份文件**不适用**于它们。
+
 下面所有涉及几何的命令，都可以用 `--calibration 文件.calibration.json` 指定参数，也可以直接写
 `--r0 --r1 --sectors [--usable-sectors] [--pitch-linear --pitch-quadratic --pitch-cubic]`。
 
