@@ -15,6 +15,12 @@ listeners only hear the music.
  centre ── not recordable ── music tracks ── 2 s silence ── artwork (data track) ── edge
 ```
 
+![A burned disc: music plays in a CD player, the picture is visible on the recording surface](docs/images/example-sr80sp50v1.jpg)
+
+*Verbatim SR80SP50V1 (AZO), burned with
+[`calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json`](calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json).
+The inner ring is the music; the picture starts right outside it.*
+
 CDArtTrack is a single Python script (standard library only) that glues the
 pieces together:
 

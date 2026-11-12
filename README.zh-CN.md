@@ -12,6 +12,12 @@
  中心 ── 不可刻录 ── 音轨 ── 2 秒静音 ── 图案（数据轨）── 外缘
 ```
 
+![刻好的光盘：CD 机能播放音乐，刻录面上能看到图案](docs/images/example-sr80sp50v1.jpg)
+
+*Verbatim SR80SP50V1（AZO），使用
+[`calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json`](calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json) 刻录。
+内圈是音乐，图案从音乐区外侧开始。*
+
 CDArtTrack 是一个只用 Python 标准库的脚本，负责把这些环节串起来：
 
 | 命令 | 作用 |
