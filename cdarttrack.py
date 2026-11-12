@@ -460,15 +460,22 @@ class _SgIoHdr(ctypes.Structure):
                 ("duration", ctypes.c_uint), ("info", ctypes.c_uint)]
 
 
-def read_audio(dev, lba, count):
+def read_audio(dev, lba, count, chunk=25):
+    """Read raw CD-DA sectors. The kernel rejects large requests, so read in chunks."""
     import fcntl
-    buf = ctypes.create_string_buffer(count * SECTOR)
+    buf = ctypes.create_string_buffer(chunk * SECTOR)
+    out = bytearray()
     fd = os.open(dev, os.O_RDONLY | os.O_NONBLOCK)
     try:
-        fcntl.ioctl(fd, CDROMREADAUDIO, _ReadAudio(lba, CDROM_LBA, count, ctypes.addressof(buf)))
+        done = 0
+        while done < count:
+            n = min(chunk, count - done)
+            fcntl.ioctl(fd, CDROMREADAUDIO, _ReadAudio(lba + done, CDROM_LBA, n, ctypes.addressof(buf)))
+            out += buf.raw[:n * SECTOR]
+            done += n
     finally:
         os.close(fd)
-    return buf.raw
+    return bytes(out)
 
 
 def read_cdtext_packs(dev):
