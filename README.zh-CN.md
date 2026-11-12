@@ -45,6 +45,7 @@ CDArtTrack 是一个只用 Python 标准库的脚本，负责把这些环节串�
 | 文件 | 盘片 | ATIP | 模具编号（中心透明圈） |
 |------|------|------|------------------------|
 | [`verbatim-phono-r-cmc-cwlht-1744.calibration.json`](calibrations/verbatim-phono-r-cmc-cwlht-1744.calibration.json) | Verbatim Phono-R CD-R 80 分钟（日本版） | CMC Magnetics，359,846 扇区 | `CWLHT-1744` |
+| [`verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json`](calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json) | Verbatim SR80SP50V1 CD-R 80 分钟，AZO（日本版） | Mitsubishi Chemical，359,848 扇区 | `78AB0114`、`78AB0115` |
 
 只能用于模具编号相同的盘。同一包 Phono-R 里还混有 `CWLHT-1579` 的盘，这份文件**不适用**于它们。
 

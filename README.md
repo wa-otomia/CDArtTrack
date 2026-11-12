@@ -51,6 +51,7 @@ Calibration files that have produced a correct picture are collected in
 | File | Media | ATIP | Mold code (hub ring) |
 |------|-------|------|----------------------|
 | [`verbatim-phono-r-cmc-cwlht-1744.calibration.json`](calibrations/verbatim-phono-r-cmc-cwlht-1744.calibration.json) | Verbatim Phono-R CD-R 80 min (Japan) | CMC Magnetics, 359,846 sectors | `CWLHT-1744` |
+| [`verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json`](calibrations/verbatim-sr80sp50v1-mcc-78ab0114-0115.calibration.json) | Verbatim SR80SP50V1 CD-R 80 min, AZO (Japan) | Mitsubishi Chemical, 359,848 sectors | `78AB0114`, `78AB0115` |
 
 Only use a file for discs with the same mold code. The same Phono-R pack also
 contained `CWLHT-1579` discs, and this file does **not** fit those.

@@ -1,0 +1,56 @@
+{
+  "target": {
+    "schemaVersion": 14,
+    "artwork": "ReferenceCross",
+    "id": "8f4b4a009da146eda15e946d2585d93d",
+    "parameters": {
+      "kind": "Cd",
+      "innerRadiusMm": 24.83775218082262,
+      "outerRadiusMm": 58.02085319129645,
+      "sectors": 359848,
+      "linearDensity": 1200,
+      "pitchLinear": -1.376124756006727E-05,
+      "pitchQuadratic": 7.957115991782133E-06,
+      "pitchCubic": -3.047481094279604E-07,
+      "bluRayInvertMapping": false,
+      "drawingStartSector": 0,
+      "bluRayIsoTimestamp": null,
+      "drawingEndSectorExclusive": 0,
+      "usableSectors": 359846
+    },
+    "options": {
+      "largeCellMm": 8.218724708476492,
+      "mediumCellMm": 4.109362354238246,
+      "smallCellMm": 2.054681177119123,
+      "sectorGapMm": 1
+    },
+    "cells": []
+  },
+  "observations": [],
+  "fitOptions": {
+    "searchCenter": {
+      "kind": "Cd",
+      "innerRadiusMm": 24.83775218082262,
+      "outerRadiusMm": 58.02085319129645,
+      "sectors": 359848,
+      "linearDensity": 1200,
+      "pitchLinear": -1.376124756006727E-05,
+      "pitchQuadratic": 7.957115991782133E-06,
+      "pitchCubic": -3.047481094279604E-07,
+      "bluRayInvertMapping": false,
+      "drawingStartSector": 0,
+      "bluRayIsoTimestamp": null,
+      "drawingEndSectorExclusive": 0,
+      "usableSectors": 359846
+    },
+    "radiusRangeMm": 0.02,
+    "huberDeltaMm": 0.8,
+    "maxCandidates": 8,
+    "fitDvdPitch": true,
+    "pitchCoefficientRange": 0.05,
+    "adaptiveRobustScale": true,
+    "autoRange": true
+  },
+  "cdInterleave": true,
+  "photo": null
+}
